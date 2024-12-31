@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ],
+    "env": {
+      "DB_URI": "mongodb+srv://w27330449:W27330449.F@cluster0.yz1fz.mongodb.net/?retryWrites=true&w=majority&indexName=Cluster0",
+      "PORT": "3000",
+      "JWT_SECRET": "acb1234"
+    }
+  }
+  
